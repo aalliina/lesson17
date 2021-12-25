@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userCash = prompt('Сколько у вас денег: ');
+let chocoPrice = prompt('Стоимость одной плитки шоколада: ')
+let amount = Math.floor(userCash / chocoPrice);
+alert(`вы можете купить ${amount} шоколадку`)
+let change = userCash-(chocoPrice*amount);
+alert(` сдача: ${change}`)
+if (amount == 1){
+   let result =  userCash / chocoPrice
+   alert("вы можете купить 1 шоколадку")
+}
+else if (amount>1){
+   let result = userCash / chocoPrice
+   alert(`вы можете купить ${amount} шоколадок`)
+}
+else{
+   let result = userCash<chocoPrice
+   alert(`недостаточно денег`)
+}
+    </script>
+</body>
+</html>
